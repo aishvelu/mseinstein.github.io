@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Ms.<br>Einstein</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Team</a> 
+    <a href="#blog" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Updates</a> 
+    <a href="#funding" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Funding</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="home">
+    <h1 class="w3-jumbo"><b>Non-Profit STEM Program for Elementary Girls</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Home.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Introducing our newly created website, where you will find any information concerning Ms. Einstein.</p>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="w3-container" id="about" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>About.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Young Girls Need STEM!</p>
+    <p>As many know, the lack of female engineers is very much prevalent nowadays. As girls surpass the age of ten or so, their interest in tech and engineering drastically diminishes. The lack of female mentors is without a doubt one of the primary factors responsible for this trend. Consequently, I as well as my colleague Jenna Allman wish to be these mentors that help mitigate this problem—at least in our community. In addition, being mentors relatively close to their age, we believe will make communication easier and learning more effective.
+    </p>
+    <p>Timing: 5:30 - 6:30 PM every Monday from July 15 - August 19 </p>
+    <p>Location: Walpole Public Library</p>
+  </div>
+  
+  <!-- Team -->
+  <div class="w3-container" id="team" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Team.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>"I have always wanted to become an engineer for as long as I could remember. However, I was discouraged to do so by much of my family. Since I was young, they insisted on me become a doctor, attempting to convince me by alluding to the substantial impact I would make on the world by helping save so many people. However, my mission is to make an impact by my own means and though what I am truly passionate about. The first step in fulfilling this is Ms Einstein. Supporting young girls and helping excite them about a field that so many women fail to embark on is truly fulfilling and just the preface of my impact."</p>
+    <p>Aishwarya Velu
+    </p>
+    <p><b>Memebers of SWE (The National Society of Woman Engineers)</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team2.jpg" alt="Aishwarya" style="width:100%">
+        <div class="w3-container">
+          <h3>Aishwarya Velu</h3>
+          <p class="w3-opacity">Founder and Director</p>
+          <p>Aishwarya Velu is a rising senior at Walpole High, who has been a part of SWE throughout her high school career. She has substantial experience in website and mobile developemnt with knowledy predominantly in html, python, javascript, and swift. Velu has also worked as an intern at the Dr. Kohane Research Lab in Boston Children's Hospital, calibrating programs such as TRIOS for use  of the rheometer to analyze and determine most efficacious jell for drug delivery in relation to otitis media as well as producing her own program to count biofilm colonies with python. </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team1.jpg" alt="Jenna" style="width:100%">
+        <div class="w3-container">
+          <h3>Jenna Allman</h3>
+          <p class="w3-opacity">Assistant</p>
+          <p>Jenna is a rising senior at Walpole High School. She is a recently new memeber to SWE. However, Allman has a great experience of working with children as a coach for young climbers at her gym Team Rock Spot.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Updates -->
+  <div class="w3-container" id="updates" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Updates.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Here, we like to show the parents what we did in class! Exciting stuff only, of course!</p>
+    <div class="w3-row-padding">
+      <div class="w3-half">
+        <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+        <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+        <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+      </div>
+  
+      <div class="w3-half">
+        <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+        <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+        <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+      </div>
+    </div>
+  </div>
+
+  <!-- Funding -->
+  <div class="w3-container" id="funding" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Funding.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p> Each year Ms. Einstein must generate significant funding to continue. Ms. Einstien would not be possible without the generous support of our individual donors and sponsors:</p>
+    <p> </p>
+    <p>Click the link down below to support MS. EINSTEIN INC Women's Technology Program with any donation possible.</p>
+    <p> </p>
+    <p>GoFundMe Link: https://www.gofundme.com/swe-campaign-for-ms-einstein</p>
+    <img src="/w3images/team2.jpg" alt="Documentation of Legal Existence" style="width:100%">
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>If you have any inquiries or would like to enroll your daughter, please feel free to contact us down below!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+
